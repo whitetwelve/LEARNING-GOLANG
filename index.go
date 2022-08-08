@@ -1,8 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-// Membuat variabel
 func main() {
 	// ----VARIABEL BOOLEAN---//
 	var boolean = true
@@ -16,7 +17,7 @@ func main() {
 
 	numberic = 2022
 	fmt.Println(numberic)
-	// ----VARIABEL STRING---//
+	// // ----VARIABEL STRING---//
 	fullname := "Fuad Azkia"
 	fmt.Println(fullname)
 
@@ -30,4 +31,25 @@ func main() {
 
 	fmt.Println(firstName)
 	fmt.Println(lastName)
+	// // CONST JAMAK //
+	const (
+		fullName string = "Fuad Azkia"
+		age      int    = 30
+		address  string = "Bekasi"
+	)
+
+	fmt.Println(fullName)
+	fmt.Println(age)
+	fmt.Println(address)
+
+	//--OPERATOR--//
+	var result = 10 + 100
+	fmt.Println(result)
+
+	const (
+		a int = 200
+		b int = 10
+		c     = a * b
+	)
+	fmt.Println(c)
 }
